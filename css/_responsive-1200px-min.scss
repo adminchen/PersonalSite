@@ -7,10 +7,10 @@
 @media (min-width: 1200px) {
 
   // Fixed grid
-  @include grid-core(70px, 30px);
+  //@include grid-core(70px, 30px);
 
   // Fluid grid
-  @include grid-fluid(5.982905983%, 2.564102564%);
+ @include grid-fluid(5.982905983%, 2.564102564%);
 
   // Input grid
   @include grid-input(70px, 30px);

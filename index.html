@@ -1,13 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8"/>
-	<title>Richard Bray</title>
-	<link rel="stylesheet" href="css/bootstrap.css">
-</head>
-<body>
-	<div id="box">
-		<p id="text">omgwtfbbq</p>
-	</div>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Roxanne Cook">
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>Portfolio of Richard Bray - Web Designer & Front-End Developer</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="css/skins/tango/skin.css">
+    </head>
+    <body>
+        <!-- header
+            ================================================== -->
+		<section class="logo">
+			<div class="row">
+				<img src="img/logo.png" alt="logo">
+			</div>
+		</section>
+        <section class="head">
+			<article class="row">
+				<ul id="mycarousel" class="jcarousel-skin-tango">
+					<li><img src="img/s1.jpg" alt="image1"></li>
+					<li><img src="img/s2.jpg" alt="image2"></li>
+					<li><img src="img/s3.jpg" alt="image3"></li>
+					<li><img src="img/s4.jpg" alt="image4"></li>
+					<li><img src="img/s5.jpg" alt="image5"></li>
+					<li><img src="img/s6.jpg" alt="image6"></li>
+					<li><img src="img/s7.jpg" alt="image7"></li>
+				</ul>
+			</article>
+        </section>
+        <section class="punch-line">
+            <b>Front End Developer</b> by day <b>3D Artist</b> by night.
+        </section>
+        <!-- featured work
+            ================================================== -->
+        <section class="work container">
+            <article class="container-fluid">
+                <div class="row">
+                    <div class="span6 block">
+                        <div>&nbsp; My Mag <i>Go to site</i></div>
+                    </div>
+                    <div class="span1">&nbsp;</div>
+                    <div class="span6 block">
+                        <div>My mag</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span6 block">
+                        <div>My mag</div>
+                    </div>
+                    <div class="span1">&nbsp;</div>
+                    <div class="span6 block">
+                        <div>My mag</div>
+                    </div>
+                </div>
+				<div class="row opt">
+					<b class="top">TOP</b> MORE
+				</div>
+            </article>
+        </section>
+        <!-- about bit
+            ================================================== -->
+        <section class="about">
+            <article class="container">
+                <div class="row-fluid">
+                    <div class="span6">
+                        ABOUT ME <br />
+                        What can I wirte about myself? Well... I'm a creative person with lots of ideas and hobbies, too many in fact. I enjoy creating;
+                        <ul>
+                            <li>Sleek simple websites.</li>
+                            <li>3D character & animations.</li>
+                            <li>And the odd bit of 2D Graphic Design work.</li>
+                        </ul>
+                        I'm a huge fan of simple chic, art, yes exactly the kind of stuff you'd see in a copy of Vogue, or from this guy. And therefore a fan of simple clean websites, and just a clean life in general.
+                        <p></p>
+                        Enough of my rambling, if you like what you see then contact me here. If you don't like anything then you can still contact me, I like all types of feedback.
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- contact bit
+            ================================================== -->
+        <section class="work">
+            <article class="container">
+                <form id="formID" class="formular row" method="post" action="contact.php">
+					<fieldset>
+						<input value="" class=" validate[required] text-input span6 name" type="text" name="subject" placeholder="Your Name">
+
+						<input value="" class="validate[custom[email]] text-input span6" type="text" name="email" placeholder="Your Email Address">
+					</fieldset>
+                    <fieldset>
+						<textarea value="" class="validate[required,length[6,300]] text-input span12" name="experience" placeholder="Your Message"> </textarea>
+                    </fieldset> 
+                    <div style="float:left">
+                        <input class="submit" type="submit" value="Send" />
+                    </div>
+                </form>
+            </article>
+        </section>
+		<!-- social bit
+            ================================================== -->
+		<section class="social">
+			<article class="container">
+				Social Icons Go Here
+			</article>
+		</section>
+		<!-- footer
+            ================================================== -->
+		<footer>
+			<article class="container">
+				Footer Goes Here
+			</article>
+		</footer>
+        <!-- javascripts
+            ================================================== -->
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+		<script src="js/jquery.jcarousel.min.js"></script>
+		<script src="js/jquery.scrollTo-min.js"></script>
+		<script src="js/custom.js"></script>
+    </body>
 </html>

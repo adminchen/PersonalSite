@@ -638,3 +638,10 @@
     $i: $i - 1;
   }
 }
+
+@mixin trans($time: .3s) {
+	-webkit-transition:$time;
+	-moz-transition:$time;
+	-o-transition:$time;
+	transition:$time;	
+}

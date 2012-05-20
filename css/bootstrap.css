@@ -3845,3 +3845,103 @@ a.label:hover, a.badge:hover {
 
 .invisible {
   visibility: hidden; }
+
+body {
+  background-color: #f2f2f2;
+  color: white; }
+
+.head {
+  width: 100%; }
+  .head article {
+    padding: 0 !important; }
+
+.punch-line {
+  background-color: #273138;
+  text-align: center;
+  padding: 40px 0;
+  font-size: 22px;
+  letter-spacing: 4px;
+  font-weight: bold; }
+  .punch-line b {
+    color: #dedede;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .punch-line b:hover {
+      opacity: 0.5;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+
+.block {
+  background-color: #dedede;
+  height: 250px;
+  margin: 0 !important; }
+  .block div {
+    background-color: #7d7680;
+    width: 100%;
+    margin-top: 212px;
+    padding: 10px 0;
+    font-weight: bold; }
+    .block div i {
+      float: right;
+      margin-right: 20px;
+      font-style: normal; }
+
+.span6 {
+  width: 430px; }
+
+.span1 {
+  width: 20px; }
+
+.work .row {
+  margin: 40px 0; }
+
+.about {
+  background-color: #3f4e4b;
+  padding: 40px 0; }
+
+.social {
+  background-color: #4e3f42;
+  padding: 40px 0; }
+
+footer {
+  background-color: #273138;
+  padding: 40px 0; }
+
+input.span6, textarea.span6, .uneditable-input.span6 {
+  width: 450px;
+  height: 30px; }
+
+textarea {
+  height: 300px !important; }
+
+.name {
+  margin-right: 16px; }
+
+.jcarousel-skin-tango img {
+  width: 100%;
+  -webkit-transition: 0.9s;
+  -moz-transition: 0.9s;
+  -o-transition: 0.9s;
+  transition: 0.9s; }
+  .jcarousel-skin-tango img:hover {
+    opacity: 0.9;
+    -webkit-transition: 0.9s;
+    -moz-transition: 0.9s;
+    -o-transition: 0.9s;
+    transition: 0.9s; }
+
+.logo {
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  margin-top: 20px; }
+  .logo div {
+    text-align: center; }
+
+.opt {
+  color: black !important; }
