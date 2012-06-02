@@ -39,6 +39,37 @@ jQuery(document).ready(function() {
 		$.scrollTo( '.head', 1200, {easing:'elasout'} );
 	});
 	
+	$(".more").click(function(){
+		$(".more-work").slideToggle({easing:'BounceEaseOut'});
+		$('.more').toggle();
+	});
+
 });
+
+	$('.about').waypoint(function() {
+		$('#graph').jqBarGraph({ 
+			data: graphByMonth, 
+			width: 450,
+			color: '#d8dbdb',
+			barSpace: 5
+		});
+		
+		}, {
+		
+			triggerOnce: true,
+			offset: '60%'
+
+	});
+	
+graphByMonth = new Array(
+		[90,'Photoshop'],
+		[80,'HTML/CSS'],
+		[20,'Rails'],
+		[50,'Jquery'],
+		[20,'SCSS'],
+		[25,'Git cmds'],
+		[90,'3DS Max'],
+		[60,'Mubdox']		
+	);
 
 

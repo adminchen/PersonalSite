@@ -3899,6 +3899,9 @@ body {
 
 .work .row {
   margin: 40px 0; }
+.work .more-work {
+  display: none;
+  height: 250px; }
 
 .about {
   background-color: #3f4e4b;
@@ -3945,3 +3948,14 @@ textarea {
 
 .opt {
   color: black !important; }
+  .opt b {
+    cursor: pointer; }
+  .opt .more {
+    float: right; }
+
+#graph .graphValuegraph {
+  color: #3f4e4b;
+  display: none; }
+#graph .graphLabelgraph {
+  font-size: 10px;
+  margin-top: 10px; }

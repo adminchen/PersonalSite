@@ -52,9 +52,15 @@ body{
 
 .span6 {width: 430px;}
 .span1 {width: 20px;}
+
 .work{
 	.row{
 		margin:40px 0;
+	}
+	
+	.more-work{
+		display:none;
+		height:250px;
 	}
 }
 
@@ -110,4 +116,22 @@ textarea{
 
 .opt{
 	color:$black !important;
+	b{
+		cursor:pointer;
+	}
+	
+	.more{
+		float:right;
+	}
+}
+
+#graph{
+	.graphValuegraph{
+		color:$dull-green;
+		display:none;
+	}
+	.graphLabelgraph{
+		font-size: 10px;
+		margin-top: 10px;
+	}
 }
