@@ -16,8 +16,8 @@ body{
 	background-color: $dull-blue;
 	text-align:center;
 	padding:40px 0;
-	font-size: 22px;
-	letter-spacing: 4px;
+	font-size: 20px;
+	letter-spacing: 2px;
 	font-weight: bold;
 	b{
 		color:$dull-light-grey;
@@ -36,11 +36,13 @@ body{
 	margin:0 !important;
 	
 	div{
-		background-color:$dull-light-purple;
+		background-color:$grayDark;
 		width:100%;
-		margin-top: 212px;
 		padding: 10px 0;
 		font-weight: bold;
+		margin-top: -38px;
+		position: relative;
+		z-index: 999;
 		
 		i{
 			float:right;
@@ -62,21 +64,61 @@ body{
 		display:none;
 		height:250px;
 	}
+	
+	a{
+		color:$white;
+	}
+	.more{
+		color:$grayDark;
+		font-size:20px;
+		font-weight:bold;
+	}
 }
 
+.cont{
+		color:$grayDark;
+		font-size:20px;
+		font-weight:bold;
+	}
+	
 .about{
 	background-color:$dull-green;
 	padding: 40px 0;
+	.span6{
+		font-size: 13px;
+		line-height: 23px;
+	}
+	li {
+		line-height: 25px;
+	}
+	b{
+		font-size:20px;
+	}
 }
 
 .social{
 	background-color:$dull-red;
-	padding: 40px 0;
+	padding: 30px 0;
+	ul{
+		text-align:center;
+	}
+	li{
+		display: inline;
+		list-style-type: none;
+		padding:0 4%;
+
+		@include trans;
+		&:hover{
+			opacity:0.7;
+			@include trans;
+		}
+	}
 }
 
 footer{
 	background-color:$dull-blue;
 	padding: 40px 0;
+	text-align:center;
 }
 
 input.span6, textarea.span6, .uneditable-input.span6 {
@@ -115,7 +157,8 @@ textarea{
 }
 
 .opt{
-	color:$black !important;
+	color:$grayDark !important;
+	font-size:20px;
 	b{
 		cursor:pointer;
 	}
@@ -134,4 +177,9 @@ textarea{
 		font-size: 10px;
 		margin-top: 10px;
 	}
+}
+
+input.span6, textarea.span6, .uneditable-input.span6 {
+width: 449px;
+height: 30px;
 }

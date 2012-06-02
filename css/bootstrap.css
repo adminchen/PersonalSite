@@ -3859,8 +3859,8 @@ body {
   background-color: #273138;
   text-align: center;
   padding: 40px 0;
-  font-size: 22px;
-  letter-spacing: 4px;
+  font-size: 20px;
+  letter-spacing: 2px;
   font-weight: bold; }
   .punch-line b {
     color: #dedede;
@@ -3881,11 +3881,13 @@ body {
   height: 250px;
   margin: 0 !important; }
   .block div {
-    background-color: #7d7680;
+    background-color: #333333;
     width: 100%;
-    margin-top: 212px;
     padding: 10px 0;
-    font-weight: bold; }
+    font-weight: bold;
+    margin-top: -38px;
+    position: relative;
+    z-index: 999; }
     .block div i {
       float: right;
       margin-right: 20px;
@@ -3902,18 +3904,53 @@ body {
 .work .more-work {
   display: none;
   height: 250px; }
+.work a {
+  color: white; }
+.work .more {
+  color: #333333;
+  font-size: 20px;
+  font-weight: bold; }
+
+.cont {
+  color: #333333;
+  font-size: 20px;
+  font-weight: bold; }
 
 .about {
   background-color: #3f4e4b;
   padding: 40px 0; }
+  .about .span6 {
+    font-size: 13px;
+    line-height: 23px; }
+  .about li {
+    line-height: 25px; }
+  .about b {
+    font-size: 20px; }
 
 .social {
   background-color: #4e3f42;
-  padding: 40px 0; }
+  padding: 30px 0; }
+  .social ul {
+    text-align: center; }
+  .social li {
+    display: inline;
+    list-style-type: none;
+    padding: 0 4%;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .social li:hover {
+      opacity: 0.7;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
 
 footer {
   background-color: #273138;
-  padding: 40px 0; }
+  padding: 40px 0;
+  text-align: center; }
 
 input.span6, textarea.span6, .uneditable-input.span6 {
   width: 450px;
@@ -3947,7 +3984,8 @@ textarea {
     text-align: center; }
 
 .opt {
-  color: black !important; }
+  color: #333333 !important;
+  font-size: 20px; }
   .opt b {
     cursor: pointer; }
   .opt .more {
@@ -3959,3 +3997,7 @@ textarea {
 #graph .graphLabelgraph {
   font-size: 10px;
   margin-top: 10px; }
+
+input.span6, textarea.span6, .uneditable-input.span6 {
+  width: 449px;
+  height: 30px; }
