@@ -1,0 +1,48 @@
+.container{
+	header:first-child{
+		text-align:center;
+		img{
+			margin: 12px 0;
+			opacity:.4;
+			@include transition(.5s ease); 
+			&:hover{
+				opacity:1;
+			}
+		}
+	}
+}
+
+.flexslider{
+	border:none;
+	box-shadow:none;
+	margin-top: 10px;
+}
+
+.flex-control-thumbs {
+	margin: 35px 0 0;
+	img {
+		width:auto;
+	}
+}
+
+
+
+#navcontainer ul
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+	li { 
+		a{
+			text-decoration: none;
+			padding: .2em 1em;	
+			@include transition(.3s ease);
+			&:hover{
+				background-color:$grayLighter;
+				
+			}
+		}
+		display: inline; 
+	}
+}

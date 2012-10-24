@@ -4694,3 +4694,41 @@ html[xmlns] .slides {
   .flex-direction-nav .flex-next {
     opacity: 1;
     right: 0; } }
+.container header:first-child {
+  text-align: center; }
+  .container header:first-child img {
+    margin: 12px 0;
+    opacity: .4;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease; }
+    .container header:first-child img:hover {
+      opacity: 1; }
+
+.flexslider {
+  border: none;
+  box-shadow: none;
+  margin-top: 10px; }
+
+.flex-control-thumbs {
+  margin: 35px 0 0; }
+  .flex-control-thumbs img {
+    width: auto; }
+
+#navcontainer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center; }
+  #navcontainer ul li {
+    display: inline; }
+    #navcontainer ul li a {
+      text-decoration: none;
+      padding: .2em 1em;
+      -webkit-transition: 0.3s ease;
+      -moz-transition: 0.3s ease;
+      -o-transition: 0.3s ease;
+      transition: 0.3s ease; }
+      #navcontainer ul li a:hover {
+        background-color: #eeeeee; }
