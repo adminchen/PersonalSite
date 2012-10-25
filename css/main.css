@@ -4694,6 +4694,16 @@ html[xmlns] .slides {
   .flex-direction-nav .flex-next {
     opacity: 1;
     right: 0; } }
+::-moz-selection {
+  color: white;
+  text-shadow: none;
+  background: #778da8; }
+
+::selection {
+  color: white;
+  text-shadow: none;
+  background: #778da8; }
+
 .container header:first-child {
   text-align: center; }
   .container header:first-child img {
@@ -4710,11 +4720,47 @@ html[xmlns] .slides {
   border: none;
   box-shadow: none;
   margin-top: 10px; }
+  .flexslider .slides img {
+    width: auto; }
 
 .flex-control-thumbs {
   margin: 35px 0 0; }
   .flex-control-thumbs img {
-    width: auto; }
+    width: auto;
+    margin-left: auto;
+    margin-right: auto; }
+  .flex-control-thumbs li {
+    width: 20%; }
+
+.img-text {
+  position: absolute;
+  top: 120px;
+  margin-left: 70px; }
+  .img-text h2 {
+    margin: 5px 0; }
+  .img-text article {
+    font-size: 17px;
+    line-height: 25px;
+    padding: 10px 0 25px 0; }
+  .img-text a {
+    color: white; }
+  .img-text p img {
+    opacity: .5;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease; }
+    .img-text p img:hover {
+      opacity: 1; }
+
+.white {
+  color: white; }
+
+.row:last-child {
+  text-align: center;
+  margin-top: 25px;
+  letter-spacing: 4px;
+  font-size: 13px; }
 
 #navcontainer ul {
   margin: 0;

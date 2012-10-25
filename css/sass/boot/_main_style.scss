@@ -1,3 +1,15 @@
+::-moz-selection {
+	color: $white;
+	text-shadow: none;
+	background: #778da8;
+}
+
+::selection {
+	color: $white;
+	text-shadow: none;
+	background: #778da8;
+}
+
 .container{
 	header:first-child{
 		text-align:center;
@@ -16,16 +28,63 @@
 	border:none;
 	box-shadow:none;
 	margin-top: 10px;
+
+	.slides{
+		img{
+			width:auto;
+		}
+	}
 }
 
 .flex-control-thumbs {
 	margin: 35px 0 0;
 	img {
 		width:auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	li{
+		width:20%;
 	}
 }
 
+.img-text{
+	position: absolute;
+	top: 120px;
+	margin-left: 70px;
+	h2{
+		margin: 5px 0;
+	}
+	article{
+		font-size:17px;
+		line-height: 25px;
+		padding:10px 0 25px 0;
+	}
+	a{
+		color: $white;
+	}
+	p{
+			img{
+			opacity:.5;
+			@include transition(.3s ease);
+			&:hover{
+				opacity:1;
+			}
+		}
+	}
+}
 
+.white{
+	color:$white;
+}
+
+
+.row:last-child{
+	text-align: center;
+	margin-top: 25px;
+	letter-spacing: 4px;
+	font-size: 13px;
+}
 
 #navcontainer ul
 {
