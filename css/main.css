@@ -4756,7 +4756,7 @@ html[xmlns] .slides {
 .white {
   color: white; }
 
-.row:last-child {
+.copy {
   text-align: center;
   margin-top: 25px;
   letter-spacing: 4px;
@@ -4771,7 +4771,12 @@ html[xmlns] .slides {
     display: inline; }
     #navcontainer ul li a {
       text-decoration: none;
-      padding: .2em 1em;
+      color: #555555;
+      text-transform: uppercase;
+      padding: 10px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
       -webkit-transition: 0.3s ease;
       -moz-transition: 0.3s ease;
       -o-transition: 0.3s ease;

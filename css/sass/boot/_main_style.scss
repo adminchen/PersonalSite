@@ -79,7 +79,7 @@
 }
 
 
-.row:last-child{
+.copy{
 	text-align: center;
 	margin-top: 25px;
 	letter-spacing: 4px;
@@ -95,7 +95,10 @@
 	li { 
 		a{
 			text-decoration: none;
-			padding: .2em 1em;	
+			color: $gray;
+			text-transform: uppercase;
+			padding: 10px;
+			@include border-radius(4px);
 			@include transition(.3s ease);
 			&:hover{
 				background-color:$grayLighter;
