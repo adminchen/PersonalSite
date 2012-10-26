@@ -3,8 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="author" content="Richard Bray">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico">
 	<title>Portfolio of Richard Bray - Web Designer & Front-End Developer</title>
+	<link rel="stylesheet" href="css/responsive.css">
 	<link rel="stylesheet" href="css/main.css"><!-- includes twitter bootstrap-->
 	 <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -13,7 +15,7 @@
 <body>
 <!-- Slider
     ================================================== -->
-    <div class="container">
+    <div class="container-fluid">
 	    <header>
 	    	<a href="/">
 	    		<img src="img/logo.png" alt="my logo">
@@ -23,11 +25,15 @@
 			<div class="flexslider">
 			  <ul class="slides">
 			    <li data-thumb="img/icons/0.png">
-			      <img src="img/slides/0.jpg">
-			      <div class="img-text row">
-				      <h1 class="span">Keeping it simple</h1><br>
-				      <article class="span5">I'm <strong>Richard Bray</strong>, a 23 year old creative who likes to design simple user interfaces for the web.<br>
-				      If you want to get it touch,<u>richardbay89@gmail.com</u> is probably the best way.
+			      <img src="img/slides/0.jpg" alt="slide0">
+					<div class="img-text">
+						<div class="row-fluid">
+				      		<h1 class="span">Keeping it simple</h1>
+				      	</div>
+				      <article class="row-fluid">
+				      	I'm <strong>Richard Bray</strong>, a 23 year old creative who likes to design simple user interfaces for the web.
+				      <br>
+				      If you want to get it touch <u>richardbay89@gmail.com</u>.
 				      <br>
 				      <!--<strong>Read More &rarr;</strong>-->
 				      </article>
@@ -35,12 +41,13 @@
 			    </li>			  	
 			    <li data-thumb="img/icons/1.png">
 			      <a href="http://ceiga.co.uk/" target="_blank">
-			      	<img src="img/slides/1.jpg">
+			      	<img src="img/slides/1.jpg" alt="slide1">
 			      </a>
-			      	<div class="img-text row white">
-			      		<img class="span" src="img/c_logo.png" alt="ceiga logo">
-				      	<br>
-						<article class="span5">
+			      	<div class="img-text white">
+			      		<div class="row-fluid">
+			      			<img class="span" src="img/c_logo.png" alt="ceiga logo">
+				      	</div>
+						<article class="row-fluid">
 							<strong>Ceiga Magazine</strong> is a free 3D artist online magazine (with a pretty cool blog) I put together about two years ago when I was in university. Seems to be doing pretty well so far.
 						</article>
 						<p>
@@ -56,12 +63,13 @@
 			    </li>
 			    <li data-thumb="img/icons/2.png">
 			      <a href="" target="_blank">
-			      	<img src="img/slides/2.jpg">
+			      	<img src="img/slides/2.jpg" alt="slide2">
 			      </a>
-			      <div class="img-text row">
-				      <img class="span" src="img/cms_logo.png" alt="ceiga logo">
-				      <br>
-						<article class="span5">
+			      <div class="img-text">
+			      	<div class="row-fluid">
+				      	<img class="span" src="img/cms_logo.png" alt="color me sass logo">
+					  </div>
+						<article class="row-fluid">
 							CMS is a simple colour library mainly for css preprocessors such as SASS and LESS.
 						</article>
 						<p>
@@ -73,23 +81,26 @@
 			    </li>
 			    <li data-thumb="img/icons/3.png">
 			    	
-						<img src="img/slides/3.jpg">
+						<img src="img/slides/3.jpg" alt="slide3">
 					
-			      <div class="img-text row white">
-				      <h1 class="span">Retina Friendly</h1><br>
-				      <article class="span5">
+			     <div class="img-text white">
+			      <div class="row-fluid">
+				      <h1 class="span">Retina Friendly</h1>
+				  </div>
+				      <article class="row-fluid">
 				      	A place to check out a bunch of sites that support retina displays.
 				      </article>
 				  </div>			      
 			    </li>
 			    <li data-thumb="img/icons/4.png">
 			    	<a href="http://www.fanthefirecreative.com/" target="_blank">
-						<img src="img/slides/4.jpg">
+						<img src="img/slides/4.jpg" alt="slide4">
 					</a>
-			      <div class="img-text row white">
-				      <img class="span" src="img/ftf_logo.png" alt="ceiga logo">
-				      <br>
-						<article class="span5">
+			      <div class="img-text white">
+			      	<div class="row-fluid">
+				      <img class="span" src="img/ftf_logo.png" alt="fan the fire creative logo">
+				      </div>
+						<article class="row-fluid">
 							I can't really take all the credit for this site. I worked togther with <a href="http://sambathe.com/" target="_blank"><strong>Sam Bathe</strong></a> to create this and we're hoping to update it soon so watch this space.
 						</article>
 				  </div>			      
@@ -97,6 +108,37 @@
 			  </ul>
 			</div>
 	    </section>
+<!-- Mobile
+    ================================================== -->
+    <section class="visible-phone">
+    	<article class="row-fluid">
+    		<h1>Keeping It Simple</h1>
+    		I'm <strong>Richard Bray</strong>, a 23 year old creative who likes to design simple user interfaces for the web.
+    		<p>
+	    		&darr; Check out a few of my projects below. &darr;
+	    	</p>
+    	</article>
+    	<article class="row-fluid">
+    		<a href="http://ceiga.co.uk/" target="_blank">
+	    		<img src="img/icons/1.png" alt="ceiga icon">
+	    	</a>
+    	</article>
+    	<article class="row-fluid">
+    		<a href="http://ceiga.co.uk/" target="_blank">
+	    		<img src="img/icons/2.png" alt="color me sass icon">
+	    	</a>
+    	</article>
+    	<article class="row-fluid">
+    		<a href="http://ceiga.co.uk/" target="_blank">
+	    		<img src="img/icons/3.png" alt="retina ready icon">
+	    	</a>
+    	</article>
+    	<article class="row-fluid">
+    		<a href="http://ceiga.co.uk/" target="_blank">
+	    		<img src="img/icons/4.png" alt="fan the fire creative icon">
+	    	</a>
+    	</article>      	
+    </section>
 <!-- Social
     ================================================== -->
 	    <section>

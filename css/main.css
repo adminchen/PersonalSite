@@ -4595,9 +4595,6 @@ html[xmlns] .slides {
   height: 30px;
   margin: -20px 0 0;
   display: block;
-  background: url(images/bg_direction_nav.png) no-repeat 0 0;
-  position: absolute;
-  top: 50%;
   z-index: 10;
   cursor: pointer;
   text-indent: -9999px;
@@ -4704,22 +4701,25 @@ html[xmlns] .slides {
   text-shadow: none;
   background: #778da8; }
 
-.container header:first-child {
+.container-fluid header:first-child {
   text-align: center; }
-  .container header:first-child img {
+  .container-fluid header:first-child img {
     margin: 12px 0;
     opacity: .4;
     -webkit-transition: 0.5s ease;
     -moz-transition: 0.5s ease;
     -o-transition: 0.5s ease;
     transition: 0.5s ease; }
-    .container header:first-child img:hover {
+    .container-fluid header:first-child img:hover {
       opacity: 1; }
 
 .flexslider {
   border: none;
   box-shadow: none;
-  margin-top: 10px; }
+  margin-top: 10px;
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto; }
   .flexslider .slides img {
     width: auto; }
 
@@ -4735,7 +4735,12 @@ html[xmlns] .slides {
 .img-text {
   position: absolute;
   top: 120px;
-  margin-left: 70px; }
+  margin-left: 70px;
+  width: 430px;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease; }
   .img-text h2 {
     margin: 5px 0; }
   .img-text article {
@@ -4744,14 +4749,16 @@ html[xmlns] .slides {
     padding: 10px 0 25px 0; }
   .img-text a {
     color: white; }
-  .img-text p img {
-    opacity: .5;
-    -webkit-transition: 0.3s ease;
-    -moz-transition: 0.3s ease;
-    -o-transition: 0.3s ease;
-    transition: 0.3s ease; }
-    .img-text p img:hover {
-      opacity: 1; }
+  .img-text p {
+    margin-left: -18px; }
+    .img-text p img {
+      opacity: .5;
+      -webkit-transition: 0.3s ease;
+      -moz-transition: 0.3s ease;
+      -o-transition: 0.3s ease;
+      transition: 0.3s ease; }
+      .img-text p img:hover {
+        opacity: 1; }
 
 .white {
   color: white; }
@@ -4783,3 +4790,50 @@ html[xmlns] .slides {
       transition: 0.3s ease; }
       #navcontainer ul li a:hover {
         background-color: #eeeeee; }
+
+.row-fluid [class*="span"] {
+  margin-left: 0; }
+
+.visible-phone {
+  text-align: center;
+  display: none; }
+  .visible-phone .row-fluid {
+    margin: 20px 0; }
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .img-text {
+    top: 80px;
+    margin-left: 40px;
+    width: 350px; }
+    .img-text article {
+      font-size: 16px; } }
+@media (max-width: 767px) {
+  .img-text {
+    width: 280px;
+    top: 60px;
+    margin-left: 20px; }
+    .img-text article {
+      font-size: 12px;
+      line-height: 20px; }
+    .img-text h1 {
+      font-size: 25px; } }
+@media (max-width: 600px) {
+  .img-text {
+    top: 22px;
+    margin-left: 10px;
+    width: 240px; }
+    .img-text article {
+      font-size: 10px;
+      line-height: 14px; }
+    .img-text h1 {
+      font-size: 20px; }
+    .img-text p {
+      display: none; }
+    .img-text .row-fluid img {
+      margin: 10px 0; } }
+@media (max-width: 480px) {
+  .flexslider {
+    display: none; }
+
+  .visible-phone {
+    display: block; } }

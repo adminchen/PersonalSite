@@ -10,7 +10,7 @@
 	background: #778da8;
 }
 
-.container{
+.container-fluid{
 	header:first-child{
 		text-align:center;
 		img{
@@ -28,6 +28,9 @@
 	border:none;
 	box-shadow:none;
 	margin-top: 10px;
+	max-width: 940px;
+	margin-left: auto;
+	margin-right: auto;
 
 	.slides{
 		img{
@@ -52,6 +55,8 @@
 	position: absolute;
 	top: 120px;
 	margin-left: 70px;
+	width:430px;
+	@include transition(.5s ease);
 	h2{
 		margin: 5px 0;
 	}
@@ -64,6 +69,7 @@
 		color: $white;
 	}
 	p{
+		margin-left: -18px;
 			img{
 			opacity:.5;
 			@include transition(.3s ease);
@@ -107,4 +113,83 @@
 		}
 		display: inline; 
 	}
+}
+
+.row-fluid [class*="span"], {
+	margin-left:0;
+}
+
+.visible-phone{
+	text-align:center;
+	display:none;
+	.row-fluid{
+		margin:20px 0;
+	}
+}
+
+//
+// Basic Media Queries
+// --------------------------------------------------
+
+@media (min-width: 768px) and (max-width: 979px) {
+	.img-text{
+		top: 80px;
+		margin-left: 40px;
+		width:350px;
+		article{
+			font-size:16px;
+		}
+	}
+
+}
+
+@media (max-width: 767px) {
+	.img-text{
+		width:280px;
+		top: 60px;
+		margin-left: 20px;
+
+		article{
+			font-size:12px;
+			line-height:20px;
+		}
+		h1{
+			font-size:25px;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+
+		.img-text{
+		top: 22px;
+		margin-left: 10px;
+		width:240px;
+		article{
+			font-size:10px;
+			line-height:14px;
+		}
+		h1{
+			font-size:20px;
+		}
+		p{
+			display:none;
+		}
+		.row-fluid{
+			img{
+				margin: 10px 0;
+			}
+		}
+	}
+
+}
+
+@media (max-width: 480px) {
+	.flexslider{
+		display:none;
+	}
+	.visible-phone{
+		display:block;
+	}
+
 }
